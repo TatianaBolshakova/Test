@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/CreatingDowntimeFragment">
+
+    <fragment
+        android:id="@+id/CreatingDowntimeFragment"
+        android:name="com.example.mytestwork.presentation.fragment.CreatingDowntimeFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_creating_downtime">
+
+        <action
+            android:id="@+id/action_CreatingDowntimeFragment_to_DepartmentSelectionFragment"
+            app:destination="@id/DepartmentSelectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/DepartmentSelectionFragment"
+        android:name="com.example.mytestwork.presentation.fragment.DepartmentSelectionFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_department_selection">
+
+        <action
+            android:id="@+id/action_DepartmentSelectionFragment_to_CreatingDowntimeFragment"
+            app:destination="@id/CreatingDowntimeFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_padding">16dp</dimen>
+    <dimen name="main_text_size">16sp</dimen>
+    <dimen name="signatures_text_size">12sp</dimen>
+
+</resources>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">My Test Work</string>
+    <string name="title_activity_main">My Activity</string>
+    <string name="first_fragment_label">Добавить простой</string>
+    <string name="second_fragment_label">Выбрать участок</string>
+    <string name="signatures_text">Текст подписи</string>
+    <string name="title_text">Текст названия</string>
+    <string name="comment_hint">Kомментарий</string>
+    <string name="button_add_downtime_text">Добавить простой</string>
+    <string name="add_equipment">Добавить оборудование</string>
+    <string name="add_comment">Kомментарий</string>
+    <string name="add_downtime_reason">Добавить причину простоя</string>
+    <string name="place">Место</string>
+    <string name="site">Участок</string>
+    <string name="data_start_signature">Дата начала</string>
+    <string name="data_expiration_signature">Дата окончания</string>
+    <string name="data_start_title_text">Дата начала простоя</string>
+    <string name="data_expiration_title_text">Дата окончания простоя</string>
+    <string name="time_start_signature">Время начала</string>
+    <string name="time_expiration_signature">Время окончания</string>
+    <string name="time_start_title_text">Время начала простоя</string>
+    <string name="time_expiration_title_text">Время окончания простоя</string>
+    <string name="type_downtime">Tип простоя</string>
+    <string name="empty_string"> </string>
+    <string name="next">Next</string>
+
+</resources>

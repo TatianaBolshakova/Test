@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragment.CreatingDowntimeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/my_blue_light"
+            android:orientation="vertical">
+
+            <com.example.mytestwork.presentation.viewgroup.MyCardView
+                android:id="@+id/card_view_site"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.example.mytestwork.presentation.viewgroup.MyCardView
+                android:id="@+id/card_view_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/date_enter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                >
+
+                <com.example.mytestwork.presentation.viewgroup.MyCardViewDate
+                    android:id="@+id/start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.example.mytestwork.presentation.viewgroup.MyCardViewDate
+                    android:id="@+id/expiration_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/time_enter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                >
+
+                <com.example.mytestwork.presentation.viewgroup.MyCardViewTime
+                    android:id="@+id/start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.example.mytestwork.presentation.viewgroup.MyCardViewTime
+                    android:id="@+id/expiration_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <com.example.mytestwork.presentation.viewgroup.MyCardView
+                android:id="@+id/card_view_downtime_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.example.mytestwork.presentation.viewgroup.MyCardView
+                android:id="@+id/card_view_add_downtime_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.example.mytestwork.presentation.viewgroup.MyCardView
+                android:id="@+id/card_view_add_equipment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text"
+                    style="@style/MainTextStyleLight"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:hint="@string/comment_hint"
+                    android:padding="8dp"
+                    android:background="@drawable/shape"/>
+
+
+            <Button
+                android:id="@+id/button_add_downtime"
+                style="@style/MyButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:text="@string/button_add_downtime_text" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
