@@ -1,12 +1,10 @@
 package com.example.mytestwork.adapter
-
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-
 import com.example.mytestwork.data.constant.Constants
-import com.example.mytestwork.domain.list.ListData
+import com.example.mytestwork.data.storage.ListData
 import com.example.mytestwork.viewholder.CompanyVH
 import com.example.mytestwork.viewholder.RoomVH
 import com.example.mytestwork.viewholder.SiteVH

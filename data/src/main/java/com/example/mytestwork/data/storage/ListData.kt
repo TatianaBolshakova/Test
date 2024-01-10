@@ -1,4 +1,4 @@
-package com.example.mytestwork.domain.list
+package com.example.mytestwork.data.storage
 
 import com.example.mytestwork.domain.model.CompanyData
 import com.example.mytestwork.domain.model.FirstItem
